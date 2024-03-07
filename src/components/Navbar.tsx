@@ -30,7 +30,7 @@ export const Navbar = () => {
 
               <div className='ml-auto flex items-center'>
                 <div
-                  className='hidden lg:flex-1 lg:items-center 
+                  className='hidden lg:flex lg:items-center 
                 lg:justify-end lg:space-x-6'
                 >
                   {user ? null : (
@@ -48,16 +48,16 @@ export const Navbar = () => {
                     <span className='h-6 w-px bg-gray-200' aria-hidden='true' />
                   )}
 
-                  {user ? (
+                  {/* {user ? (
                     'a'
-                  ) : (
-                    <Link
-                      href='/sign-up'
-                      className={buttonVariants({ variant: 'ghost' })}
-                    >
-                      Create account
-                    </Link>
-                  )}
+                  ) : ( */}
+                  <Link
+                    href='/sign-up'
+                    className={buttonVariants({ variant: 'ghost' })}
+                  >
+                    Create account
+                  </Link>
+                  {/* )} */}
 
                   {user ? null : (
                     <span className='h-6 w-px bg-gray-200' aria-hidden='true' />
