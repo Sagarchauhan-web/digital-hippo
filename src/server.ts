@@ -9,8 +9,8 @@ const start = async () => {
   const payload = await getPayloadClient({
     initOptions: {
       express: app,
-      onInit(cms) {
-        cms.logger.info(`Admin URL ${cms.getAdminURL()}`);
+      onInit: async (cms) => {
+        cms.logger.info(`Admin URL: ${cms.getAdminURL()}`);
       },
     },
   });
